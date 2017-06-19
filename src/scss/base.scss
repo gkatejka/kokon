@@ -6,3 +6,15 @@ body {
   color: $dark;
   background: $white;
 }
+
+a {
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1200px;
+  box-sizing: border-box;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin: 0 auto;
+}
