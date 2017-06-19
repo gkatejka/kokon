@@ -1,0 +1,12 @@
+@import 'normalize';
+@import 'typography';
+@import 'variables';
+@import 'base';
+
+
+// Blocks
+@import '../blocks/sprite-svg--localstorage/sprite-svg--localstorage';
+
+@import '../blocks/header/header';
+@import '../blocks/promo/promo';
+@import '../blocks/prices/prices';

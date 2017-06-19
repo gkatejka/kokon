@@ -1,0 +1,29 @@
+.promo {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 500px;
+  box-sizing: border-box;
+  padding: 60px 0;
+  margin-bottom: 50px;
+  color: $white;
+  text-align: center;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 11px 25px -3px rgba(0, 0, 0, .35);
+
+  &__wrap {
+    width: 50%;
+  }
+
+  &__title {
+    padding: 0;
+    margin: 20px 0 50px;
+    font-family: $raleway;
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .4em;
+  }
+}

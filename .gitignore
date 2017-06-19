@@ -1,0 +1,5 @@
+_design/
+build/
+node_modules/
+.sass-cache/
+.gulp-scss-cache/
