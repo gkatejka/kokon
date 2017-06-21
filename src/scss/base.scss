@@ -7,6 +7,11 @@ body {
   background: $white;
 }
 
+p {
+  margin: 0;
+  padding: 0 0 10px;
+}
+
 a {
   cursor: pointer;
 }
@@ -17,4 +22,20 @@ a {
   padding-left: 25px;
   padding-right: 25px;
   margin: 0 auto;
+}
+
+.btn {
+  padding: 15px 45px;
+  font-family: $raleway;
+  font-size: 18px;
+  font-weight: bold;
+  color: $white;
+  text-decoration: none;
+  background: $red;
+  border-radius: 2px;
+  transition: $transition;
+
+  &:hover {
+    background: darken($red, 5%);
+  }
 }

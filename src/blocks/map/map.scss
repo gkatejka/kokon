@@ -1,0 +1,29 @@
+.map {
+  position: relative;
+  height: 500px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__info {
+    position: absolute;
+    right: 105px;
+    bottom: -165px;
+    width: 413px;
+    height: 413px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #eee url('../img/map-info.jpg') 0 0 no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+  }
+  
+  &__info-text {
+    font-size: 24px;
+    font-weight: 900;
+    color: $white;
+    letter-spacing: .4em;
+    text-transform: uppercase;
+  }
+}

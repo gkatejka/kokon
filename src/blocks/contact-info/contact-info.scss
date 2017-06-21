@@ -1,0 +1,49 @@
+.contact-info {
+  padding: 15px 0 40px;
+  font-size: 16px;
+  text-align: center;
+
+  &__phone {
+    font-size: 24px;
+    font-weight: 900;
+    color: $dark;
+    text-decoration: none;
+    letter-spacing: .5em;
+
+    &:hover {
+      color: lighten($dark, 5%)
+    }
+  }
+
+  &__hours {
+    padding: 10px 0 20px;
+  }
+
+  &__email {
+    font-size: 14px;
+    font-weight: 900;
+    color: $dark;
+    text-decoration: none;
+    letter-spacing: .4em;
+    border-bottom: 1px solid $dark;
+    transition: $transition;
+
+    &:hover {
+      border-color: transparent;
+    }
+  }
+
+  &__text {
+    width: 65%;
+    margin: 0 auto;
+    line-height: 1.55;
+
+    &--email {
+      margin-bottom: 100px;
+    }
+
+    b {
+      letter-spacing: .2em;
+    }
+  }
+}

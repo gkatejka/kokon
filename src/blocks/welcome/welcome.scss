@@ -1,0 +1,14 @@
+.welcome {
+  padding: 260px 0 150px;
+  text-align: center;
+
+  &__title {
+    padding: 0;
+    margin: 10px 0 65px;
+    font-family: $circe;
+    font-size: 24px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: .4em;
+  }
+}
