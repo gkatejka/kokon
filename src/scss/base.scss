@@ -5,15 +5,32 @@ body {
   line-height: 1.35;
   color: $dark;
   background: $white;
+  overflow-x: hidden;
 }
 
 p {
   margin: 0;
-  padding: 0 0 10px;
+  padding: 0 0 15px;
 }
 
 a {
   cursor: pointer;
+}
+
+h1,
+.h1 {
+
+}
+
+h2,
+.h2 {
+  padding: 0;
+  margin: 10px 0 25px;
+  font-family: $circe;
+  font-size: 24px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: .4em;
 }
 
 .container {
@@ -22,20 +39,4 @@ a {
   padding-left: 25px;
   padding-right: 25px;
   margin: 0 auto;
-}
-
-.btn {
-  padding: 15px 45px;
-  font-family: $raleway;
-  font-size: 18px;
-  font-weight: bold;
-  color: $white;
-  text-decoration: none;
-  background: $red;
-  border-radius: 2px;
-  transition: $transition;
-
-  &:hover {
-    background: darken($red, 5%);
-  }
 }

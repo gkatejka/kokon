@@ -11,6 +11,7 @@
   @@include('blocks/header/header.html')
 
   <main class="page-wrapper">
+    @@include('blocks/sprite-svg--localstorage/img/sprite-svg--ls.svg')
 
     <section class="promo" style="background-image: url('img/сorporate-events-promo.jpg');">
       <div class="promo__wrap">
@@ -22,11 +23,22 @@
       </div>
     </section>
 
+    @@include('blocks/about/about.html')
+
+    @@include('blocks/services/services.html')
+
+    @@include('blocks/clients/clients.html')
+
     @@include('blocks/prices/prices.html')
 
     @@include('blocks/welcome/welcome.html')
     
   </main>
-  
+  <footer class="container footer">
+    <a href="http://nord-art.ru/" class="footer__logo-link" target="_blank">
+      <img src="img/nordart-logo.svg" alt="Nord Art logo" width="115" class="footer__logo">
+    </a>
+  </footer>
+  <script src="js/script.min.js"></script>
 </body>
 </html>

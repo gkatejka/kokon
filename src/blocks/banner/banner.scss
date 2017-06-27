@@ -1,0 +1,19 @@
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 280px;
+  margin: 50px 0;
+  box-shadow: 0 11px 25px -3px rgba(0, 0, 0, .35);
+
+  &__wrap {
+    width: 65%;
+  }
+
+  &__text {
+    font-size: 24px;
+    line-height: 1.7;
+    color: $white;
+    text-align: center;
+  }
+}

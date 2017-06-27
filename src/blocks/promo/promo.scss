@@ -5,7 +5,7 @@
   align-items: flex-end;
   height: 500px;
   box-sizing: border-box;
-  padding: 60px 0;
+  padding: 60px 0 55px;
   margin-bottom: 50px;
   color: $white;
   text-align: center;
@@ -25,6 +25,10 @@
     font-size: 36px;
     font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: .4em;
+    letter-spacing: .5em;
+  }
+
+  &__descr {
+    line-height: 1.3;
   }
 }

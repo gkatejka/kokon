@@ -2,7 +2,10 @@
 @import 'typography';
 @import 'variables';
 @import 'base';
-
+@import 'slick';
+@import 'slick-theme';
+@import 'magnific-popup';
+@import 'btn';
 
 // Blocks
 @import '../blocks/sprite-svg--localstorage/sprite-svg--localstorage';
@@ -11,6 +14,10 @@
 @import '../blocks/promo/promo';
 @import '../blocks/prices/prices';
 @import '../blocks/contact-info/contact-info';
+@import '../blocks/services/services';
+@import '../blocks/clients/clients';
+@import '../blocks/about/about';
+@import '../blocks/banner/banner';
 @import '../blocks/welcome/welcome';
 @import '../blocks/map/map';
 @import '../blocks/footer/footer';

@@ -1,0 +1,40 @@
+.about {
+  padding: 100px 0 50px;
+
+  &__text-wrap {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  &__title {
+    width: 50%;
+    margin-top: 75px;
+    margin-bottom: 55px;
+    line-height: 1.5;
+  }
+
+  &__slider {
+    height: 320px;
+    margin: 0 -25px;
+    margin-top: 65px;
+  }
+
+  &__slide {
+    box-sizing: border-box;
+    padding: 0 25px;
+    outline: none;
+    
+  }
+
+  &__img-link {
+    outline: none;
+  }
+  
+  &__img {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 320px;
+  }
+}

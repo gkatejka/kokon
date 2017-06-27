@@ -11,7 +11,8 @@
   @@include('blocks/header/header.html')
 
   <main class="page-wrapper">
-
+    @@include('blocks/sprite-svg--localstorage/img/sprite-svg--ls.svg')
+    
     <section class="promo" style="background-image: url('img/rent-promo.jpg');">
       <div class="promo__wrap">
         <h1 class="promo__title">Аренда залов</h1>
@@ -22,6 +23,47 @@
     </section>
     
     @@include('blocks/prices/prices.html')
+
+    <section class="container services">
+      <h2 class="services__title h2">Все что нужно</h2>
+      <p class="services__text">
+        У&nbsp;нас есть все, что способствует гармоничному и&nbsp;комфортному развитию людей во&nbsp;всех важных сферах жизни&nbsp;&mdash; внутренний мир, бизнес, образование, творчество.
+      </p>
+      <ul class="services__list">
+        <li class="services__item">
+          <svg class="services__item-icon" width="27" height="18">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#projector"></use>
+          </svg>
+          <p class="services__item-title">проекционное оборудование</p>
+        </li>
+        <li class="services__item">
+          <svg class="services__item-icon" width="25" height="28">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#music"></use>
+          </svg>
+          <p class="services__item-title">музыкальное оборудование</p>
+        </li>
+        <li class="services__item">
+          <svg class="services__item-icon" width="22" height="22">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#wifi"></use>
+          </svg>
+          <p class="services__item-title">быстрый интернет</p>
+        </li>
+        <li class="services__item">
+          <svg class="services__item-icon" width="25" height="26">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#clipboard-text"></use>
+          </svg>
+          <p class="services__item-title">флипчарт</p>
+        </li>
+        <li class="services__item">
+          <svg class="services__item-icon" width="22" height="23">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#coffee"></use>
+          </svg>
+          <p class="services__item-title">собственная кухня</p>
+        </li>
+      </ul>
+    </section>
+
+    @@include('blocks/banner/banner.html')
 
     @@include('blocks/welcome/welcome.html')
 

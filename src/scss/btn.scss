@@ -1,0 +1,16 @@
+.btn {
+  display: inline-block;
+  padding: 18px 50px;
+  font-family: $raleway;
+  font-size: 18px;
+  font-weight: bold;
+  color: $white;
+  text-decoration: none;
+  background: $red;
+  border-radius: 2px;
+  transition: $transition;
+
+  &:hover {
+    background: darken($red, 5%);
+  }
+}

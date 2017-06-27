@@ -1,0 +1,38 @@
+.services {
+  width: 55%;
+  padding: 40px 0 15px;
+  margin: 0 auto;
+  
+  &__title {
+    margin-bottom: 50px;
+    line-height: 1.45;
+  }
+
+  &__text {}
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    list-style: none;
+    padding: 0;
+    margin: 40px 0 30px;
+  }
+
+  &__item {
+    width: 30%;
+    box-sizing: border-box;
+    padding-right: 8%;
+    margin-bottom: 45px;
+    font-family: $raleway;
+    font-weight: 900;
+    line-height: 1.4;
+    color: $dark;
+  }
+
+  &__item-icon {
+    display: block;
+    min-height: 35px;
+    fill: $blue;
+  }
+}

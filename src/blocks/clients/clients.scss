@@ -1,0 +1,30 @@
+.clients {
+  width: 62%;
+  padding: 10px 0 100px;
+
+  &__title {
+    padding-left: 5.5%;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% / 3);
+    min-height: 100px;
+  }
+
+  &__img {
+    display: block;
+    max-width: 90%;
+    height: auto;
+  }
+
+}
