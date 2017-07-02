@@ -1,0 +1,54 @@
+.why {
+  max-width: 750px;
+  margin: 125px auto 0;
+
+  p {
+    margin-bottom: 25px;
+  }
+
+  &__title {
+    margin-bottom: 50px;
+  }
+
+  &__reviews {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 75px 0 65px;
+  }
+
+  &__review {
+    width: 33%;
+    text-align: center;
+  }
+
+  &__photo-wrap {
+    width: 95px;
+    height: 95px;
+    margin: 0 auto 20px;
+    overflow: hidden;
+  }
+
+  &__photo {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+  }
+
+  &__review-text {
+    min-height: 45px;
+    padding: 0;
+    margin: 0 0 10px;
+    font-family: $raleway;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: .4em;
+    line-height: 1.4;
+  }
+
+  &__review-person {
+    font-size: 16px;
+    color: rgba(1, 22, 30, .7);
+  }
+}

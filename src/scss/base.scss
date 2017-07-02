@@ -2,7 +2,7 @@ body {
   font-family: $circe;
   font-size: 16px;
   font-weight: normal;
-  line-height: 1.35;
+  line-height: 1.45;
   color: $dark;
   background: $white;
   overflow-x: hidden;
@@ -30,7 +30,8 @@ h2,
   font-size: 24px;
   font-weight: 900;
   text-transform: uppercase;
-  letter-spacing: .4em;
+  letter-spacing: .45em;
+  line-height: 1.5;
 }
 
 .container {

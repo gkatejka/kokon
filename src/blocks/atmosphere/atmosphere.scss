@@ -1,0 +1,75 @@
+.atmosphere {
+  display: flex;
+  overflow: visible;
+  max-width: 1140px;
+  padding: 85px 0 50px;
+  margin-top: 100px;
+  
+  &__left {
+    width: 57%;
+  }
+
+  &__right {
+    width: 26%;
+    padding-top: 10px;
+  }
+
+  &__title {
+    margin-bottom: 70px;
+  }
+
+  &__text {
+    .atmosphere__left & {
+      padding-right: 30%;
+      margin-bottom: 45px;
+    }
+
+    .atmosphere__right & {
+      margin-top: 80px;
+    }
+  }
+
+  &__img-wrap {
+    position: relative;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 11px 45px -3px rgba(0, 0, 0, .35);
+
+    .atmosphere__left & {
+      width: 515px;
+    }
+
+    .atmosphere__right & {
+      width: 278px;
+    }
+  }
+
+  &__img-title {
+    position: absolute;
+    left: -25px;
+    bottom: 0;
+    font-family: $raleway;
+    font-size: 12px;
+    font-weight: 900;
+    color: $silver;
+    text-transform: uppercase;
+    letter-spacing: .45em;
+    transform-origin: 0 10px 0;
+    transform: rotate(-90deg);
+
+    &--right {
+      top: 105px;
+      right: -15px;
+      bottom: auto;
+      left: auto;
+      transform-origin: 100% 0 0;
+      transform: rotate(90deg);
+    }
+  }
+}

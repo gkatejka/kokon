@@ -7,12 +7,14 @@
   box-shadow: 0 11px 25px -3px rgba(0, 0, 0, .35);
 
   &__wrap {
-    width: 65%;
+    max-width: 750px;
   }
 
   &__text {
+    padding: 15px 0 0;
+    margin: 0;
     font-size: 24px;
-    line-height: 1.7;
+    line-height: 1.5;
     color: $white;
     text-align: center;
   }

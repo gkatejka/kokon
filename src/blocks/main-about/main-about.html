@@ -1,30 +1,13 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <title>Аренда | KOKON</title>
-  <meta name="description" content="">
-  @@include('_include/page_head.html')
-</head>
-<body>
-
-  @@include('blocks/header/header.html')
-
-  <main class="page-wrapper">
-    
-    <section class="promo" style="background-image: url('img/rent-promo.jpg');">
-      <div class="promo__wrap">
-        <h1 class="promo__title">Аренда залов</h1>
-        <p class="promo__descr">
-          Арт-пространство KOKON Space отлично подходит для проведения мастер-классов, семинаров и&nbsp;тренингов. Но&nbsp;в&nbsp;это пространство хорошо вписываютcя и семейные праздники, такие как свадьбы и&nbsp;дни рождения, и&nbsp;корпоративные мероприятия.
-        </p>
+<section class="container main-about">
+  <div class="main-about__wrap">
+    <div class="main-about__left">
+      <div class="main-about__label">
+        <div class="main-about__label-text">
+          Kokon<br>space
+        </div>
       </div>
-    </section>
-    
-    @@include('blocks/prices/prices.html')
-
-    <section class="container services">
-      <h2 class="services__title h2">Все что нужно</h2>
+    </div>
+    <div class="main-about__right services">
       <p class="services__text">
         У&nbsp;нас есть все, что способствует гармоничному и&nbsp;комфортному развитию людей во&nbsp;всех важных сферах жизни&nbsp;&mdash; внутренний мир, бизнес, образование, творчество.
       </p>
@@ -60,15 +43,6 @@
           <p class="services__item-title">собственная кухня</p>
         </li>
       </ul>
-    </section>
-
-    @@include('blocks/banner/banner.html')
-
-    @@include('blocks/why/why.html')
-
-    @@include('blocks/welcome/welcome.html')
-
-  </main>
-  <script src="js/script.min.js"></script>
-</body>
-</html>
+    </div>
+  </div>
+</section>
