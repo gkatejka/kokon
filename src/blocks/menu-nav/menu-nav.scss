@@ -1,0 +1,148 @@
+.menu-nav {
+  position: absolute;
+  top: -7px;
+  right: 25px;
+  z-index: 12;
+
+  &__wrap {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      top: -185px;
+      right: -255px;
+      z-index: -1;
+      content: '';
+      width: 400px;
+      height: 400px;
+      background: $blue;
+      border-radius: 50%;
+      opacity: 0;
+      transition: $transition;
+    }
+
+    .menu-nav--open & {
+      &::before {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__toggle {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    box-sizing: border-box;
+    padding: 12px;
+    line-height: 26px;
+    background: $blue;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+
+    .menu-nav--open & {
+      top: -30px;
+      right: -245px;
+    }
+
+    span {
+      position: relative;
+      display: inline-block;
+      width: 100%;
+      height: 3px;
+      vertical-align: middle;
+      text-align: center;
+      background: $white;
+
+      .menu-nav--open & {
+        background-color: transparent;
+      }
+
+      &::before,
+      &::after {
+        position: absolute;
+        left: 0;
+        content: '';
+        height: 3px;
+        background: $white;
+      }
+
+      &::before {
+        top: -8px;
+        width: 100%;
+
+        .menu-nav--open & {
+          top: 3px;
+          width: 80%;
+          transform: rotate(-45deg);
+        }
+      }
+
+      &::after {
+        bottom: -8px;
+        width: 85%;
+
+        .menu-nav--open & {
+          bottom: -3px;
+          width: 80%;
+          transform: rotate(45deg);
+        }
+      }
+    }
+  }
+
+  &__list {
+    position: relative;
+    top: -60px;
+    left: 80px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: none;
+
+    .menu-nav--open & {
+      display: block;
+    }
+  }
+
+  &__item {
+    margin-bottom: 5px;
+
+    &:first-child {
+      margin-bottom: 8px;
+    }
+
+    &:nth-child(3) {
+      padding-left: 5px;
+    }
+
+    &:nth-child(4) {
+      padding-left: 10px;
+      margin-bottom: 3px;
+    }
+
+    &:nth-child(5) {
+      padding-left: 25px;
+      margin-bottom: 3px;
+    }
+
+    &:nth-child(6) {
+      padding-left: 40px;
+    }
+
+    &:nth-child(7) {
+      padding-left: 70px;
+    }
+  }
+
+  &__link {
+    font-family: $raleway;
+    font-size: 10px;
+    font-weight: 900;
+    color: $white;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: .45em;
+  }
+}

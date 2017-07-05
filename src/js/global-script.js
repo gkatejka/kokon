@@ -2,6 +2,10 @@
 
 $( document ).ready(function() {
 
+  $('.js-toggle-btn').click(function() {
+    $('.menu-nav').toggleClass('menu-nav--open');
+  });
+
   $('.about__slider').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
