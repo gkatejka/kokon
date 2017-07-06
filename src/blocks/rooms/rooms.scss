@@ -1,0 +1,21 @@
+.rooms {
+  height: 755px;
+  background: transparent url('../img/rooms-bg.jpg') center center no-repeat;
+  background-size: cover;
+
+  &__wrap {}
+
+  &__title {
+    font-family: $raleway;
+    font-size: 120px;
+    font-weight: 900;
+    color: #f7f7f7;
+    letter-spacing: .35em;
+    text-align: center;
+  }
+
+  &__items {}
+
+  &__item {}
+
+}
