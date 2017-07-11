@@ -1,6 +1,12 @@
 .main-promo {
   height: 725px;
+  background: url('../img/main-promo-bg.jpg') center center no-repeat;
+  background-size: cover;
   position: relative;
+
+  @media (max-width: $max-xs-width) {
+    display: none;
+  }
 
   &__items {
     display: flex;
@@ -60,7 +66,6 @@
     }
 
     &--1 {
-      background-image: url('../img/main-promo-item-1.jpg');
       
       &::before {
         background-image: url('../img/main-promo-item-2-hover.jpg');
@@ -68,7 +73,6 @@
     }
 
     &--2 {
-      background-image: url('../img/main-promo-item-2.jpg');
       
       &::before {
         background-image: url('../img/main-promo-item-2-hover.jpg');
@@ -76,7 +80,7 @@
     }
 
     &--3 {
-      background-image: url('../img/main-promo-item-3.jpg');
+    
 
       &::before {
         background-image: url('../img/main-promo-item-2-hover.jpg');
@@ -84,7 +88,8 @@
     }
 
     &--4 {
-      background-image: url('../img/main-promo-item-4.jpg');
+
+
 
       &::before {
         background-image: url('../img/main-promo-item-2-hover.jpg');
@@ -92,7 +97,6 @@
     }
 
     &--5 {
-      background-image: url('../img/main-promo-item-5.jpg');
 
       &::before {
         background-image: url('../img/main-promo-item-2-hover.jpg');

@@ -13,8 +13,12 @@ $circe: 'Circe', sans-serif;
 $raleway: 'Raleway', sans-serif;
 
 // Grid
-$tablet: 768px;
-$desktop: 1200px;
+$max-xs-width: 767px;
+$min-xs-width: 768px;
+$max-sm-width: 960px;
+$min-sm-width: 961px;
+$max-md-width: 1200px;
+$min-md-width: 1201px;
 
 // Other
 $transition: 0.3s linear;

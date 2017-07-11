@@ -3,8 +3,17 @@
   padding: 40px 25px 15px;
   margin: 0 auto;
 
+  @media (max-width: $max-xs-width) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .main-about & {
     padding-top: 18px;
+
+    @media (max-width: $max-xs-width) {
+      padding-top: 60px;
+    }
   }
   
   &__title {
@@ -39,6 +48,14 @@
     font-weight: 900;
     line-height: 1.4;
     color: $dark;
+
+    @media (max-width: $max-xs-width) {
+      width: 100%;
+      padding-right: 25%;
+      margin-bottom: 20px;
+      font-size: 14px;
+      letter-spacing: .2em;
+    }
   }
 
   &__item-icon {

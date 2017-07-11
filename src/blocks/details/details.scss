@@ -6,16 +6,38 @@
   margin-bottom: 150px;
   min-height: 500px;
 
+  @media (max-width: $max-xs-width) {
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    min-height: 1px;
+    padding-bottom: 380px;
+    margin-bottom: 50px;
+    overflow-x: hidden;
+  }
+
   &__title {
     width: 42.5%;
     padding-right: 2%;
     letter-spacing: .45em;
+
+    @media (max-width: $max-xs-width) {
+      width: 100%;
+      padding-right: 0;
+      margin-bottom: 10px;
+    }
   }
 
   &__descr-wrap {
     position: relative;
     width: 35%;
     padding-right: 9%;
+
+    @media (max-width: $max-xs-width) {
+      width: 100%;
+      padding-right: 0;
+    }
   }
 
   &__descr {
@@ -37,6 +59,12 @@
     text-decoration: none;
     border-bottom: 2px solid transparent;
     transition: $transition;
+
+    @media (max-width: $max-xs-width) {
+      top: auto;
+      left: auto;
+      right: 0;
+    }
 
     span {
       position: relative;
@@ -69,6 +97,11 @@
     left: 30%;
     top: 28%;
     width: 357px;
+
+    @media (max-width: $max-xs-width) {
+      left: -20px;
+      top: 45%;
+    }
   }
 
   &__img {

@@ -7,6 +7,10 @@
   width: 100%;
   padding: 40px 0 10px;
 
+  @media (max-width: $max-xs-width) {
+    display: none;
+  }
+
   &__wrap {
     position: relative;
     display: flex;

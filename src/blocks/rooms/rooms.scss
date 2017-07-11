@@ -3,7 +3,9 @@
   background: transparent url('../img/rooms-bg.jpg') center center no-repeat;
   background-size: cover;
 
-  &__wrap {}
+  @media (max-width: $max-xs-width) {
+    padding-top: 30px;
+  }
 
   &__title {
     font-family: $raleway;
@@ -12,10 +14,88 @@
     color: #f7f7f7;
     letter-spacing: .35em;
     text-align: center;
+
+    @media (max-width: $max-xs-width) {
+      font-size: 30px;
+      letter-spacing: .33em;
+    }
   }
 
-  &__items {}
+  &__items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 10%;
 
-  &__item {}
+    @media (max-width: $max-xs-width) {
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+  }
 
+  &__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: $max-xs-width) {
+      width: 100%;
+      height: 90px;
+      margin-bottom: 60px;
+    }
+  }
+
+  &__item-name {
+    padding: 0;
+    margin: 0;
+    font-size: 24px;
+    font-weight: 900;
+    color: $dark;
+    text-transform: uppercase;
+    letter-spacing: .35em;
+    z-index: 10;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+
+    &::after {
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      content: '';
+      width: 90px;
+      height: 90px;
+      border: 1px solid $silver;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      transition: 1s ease-in-out;
+      z-index: 8;
+    }
+
+    .rooms__item:hover & {
+      color: $white;
+
+      &::after {
+        opacity: 1;
+        width: 600px;
+        height: 600px;
+      }
+    }
+  }
+
+  &__item-img {
+    position: absolute;
+    z-index: 9;
+    width: 90px;
+    height: 90px;
+    background-size: cover;
+    border-radius: 50%;
+    transition: .7s ease-in-out;
+
+    .rooms__item:hover & {
+      width: 400px;
+      height: 400px;
+    }
+  }
 }

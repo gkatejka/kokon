@@ -1,4 +1,5 @@
 body {
+  position: relative;
   font-family: $circe;
   font-size: 16px;
   font-weight: normal;
@@ -40,4 +41,9 @@ h2,
   padding-left: 25px;
   padding-right: 25px;
   margin: 0 auto;
+
+  @media (max-width: $max-xs-width) {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
 }
