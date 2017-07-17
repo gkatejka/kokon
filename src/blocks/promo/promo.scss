@@ -14,8 +14,16 @@
   background-size: cover;
   box-shadow: 0 11px 25px -3px rgba(0, 0, 0, .35);
 
+  @media (max-width: $max-xs-width) {
+    padding-bottom: 75px;
+  }
+
   &__wrap {
     width: 50%;
+
+    @media (max-width: $max-xs-width) {
+      width: 90%;
+    }
   }
 
   &__title {
@@ -26,9 +34,18 @@
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: .5em;
+
+    @media (max-width: $max-xs-width) {
+      font-size: 24px;
+      letter-spacing: .3em;
+    }
   }
 
   &__descr {
     line-height: 1.3;
+
+    @media (max-width: $max-xs-width) {
+      font-size: 14px;
+    }
   }
 }

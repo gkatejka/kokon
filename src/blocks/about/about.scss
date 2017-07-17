@@ -2,7 +2,9 @@
   padding: 100px 0 50px;
 
   @media (max-width: $max-xs-width) {
-    
+    padding-top: 50px;
+    padding-bottom: 25px;
+    overflow: hidden;
   }
 
   &__text-wrap {
@@ -21,13 +23,26 @@
     height: 320px;
     margin: 0 -25px;
     margin-top: 65px;
+
+    .slick-arrow {
+      display: none;
+    }
+
+    @media (max-width: $max-xs-width) {
+      width: 100%;
+      margin-right: 0;
+      margin-left: 0;
+    }
   }
 
   &__slide {
     box-sizing: border-box;
     padding: 0 25px;
     outline: none;
-    
+
+    @media (max-width: $max-xs-width) {
+      padding: 0;
+    }
   }
 
   &__img-link {

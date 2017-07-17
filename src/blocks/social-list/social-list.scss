@@ -1,0 +1,30 @@
+.social-list {
+  padding: 5px 0 0;
+  padding-left: 55px;
+  margin: 0;
+  list-style: none;
+
+  @media (max-width: $max-xs-width) {
+    display: none;
+  }
+
+  &__item {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 10px;
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+
+  &__icon {
+    fill: $white;
+    opacity: .7;
+    transition: $transition;
+  }
+
+  &__link:hover &__icon {
+    opacity: 1;
+  }
+}

@@ -5,6 +5,10 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+  @media (max-width: $max-xs-width) {
+
+  }
+
   &__info {
     position: absolute;
     right: 95px;
@@ -17,6 +21,12 @@
     background: #eee url('../img/map-info.jpg') 0 0 no-repeat;
     background-size: cover;
     border-radius: 50%;
+
+    @media (max-width: $max-xs-width) {
+      width: 150px;
+      height: 150px;
+      bottom: -50px;
+    }
   }
   
   &__info-text {
@@ -25,5 +35,10 @@
     color: $white;
     letter-spacing: .45em;
     text-transform: uppercase;
+
+    @media (max-width: $max-xs-width) {
+      font-size: 14px;
+      letter-spacing: .2em;
+    }
   }
 }

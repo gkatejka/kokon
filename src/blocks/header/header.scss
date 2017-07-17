@@ -7,10 +7,6 @@
   width: 100%;
   padding: 40px 0 10px;
 
-  @media (max-width: $max-xs-width) {
-    display: none;
-  }
-
   &__wrap {
     position: relative;
     display: flex;
@@ -20,6 +16,12 @@
   &__logo-link {
     text-decoration: none;
     outline: none;
+
+    @media (max-width: $max-xs-width) {
+      .header--main & {
+        display: none;
+      }
+    }
   }
 
   &__logo {
@@ -36,35 +38,12 @@
     color: $white;
     text-decoration: none;
 
+    @media (max-width: $max-xs-width) {
+      display: none;
+    }
+
     .header--main & {
       margin-left: 0;
     }
-  }
-
-  &__social-list {
-    padding: 5px 0 0;
-    padding-left: 55px;
-    margin: 0;
-    list-style: none;
-  }
-
-  &__social-item {
-    display: inline-block;
-    vertical-align: middle;
-    padding: 0 10px;
-  }
-
-  &__social-link {
-    text-decoration: none;
-  }
-
-  &__social-icon {
-    fill: $white;
-    opacity: .7;
-    transition: $transition;
-  }
-
-  &__social-link:hover &__social-icon {
-    opacity: 1;
   }
 }

@@ -2,8 +2,16 @@
   padding: 290px 0 115px;
   text-align: center;
 
+  @media (max-width: $max-xs-width) {
+    padding-top: 100px;
+  }
+
   &__title {
     margin: 10px 0 55px;
     letter-spacing: .5em;
+
+    @media (max-width: $max-xs-width) {
+      font-size: 20px;
+    }
   }
 }

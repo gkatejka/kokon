@@ -4,8 +4,10 @@
   margin: 0 auto;
 
   @media (max-width: $max-xs-width) {
-    padding-left: 0;
-    padding-right: 0;
+    .main-about & {
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
 
   .main-about & {
@@ -28,7 +30,7 @@
   &__list {
     display: flex;
     flex-wrap: wrap;
-    width: 80%;
+    width: 90%;
     list-style: none;
     padding: 0;
     margin: 40px 0 30px;
@@ -40,7 +42,7 @@
   }
 
   &__item {
-    width: 30%;
+    width: 33%;
     box-sizing: border-box;
     padding-right: 8%;
     margin-bottom: 45px;

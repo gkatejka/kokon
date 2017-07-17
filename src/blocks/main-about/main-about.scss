@@ -22,6 +22,7 @@
 
     @media (max-width: $max-xs-width) {
       width: 100%;
+      padding-left: 0;
     }
   }
 
@@ -47,8 +48,8 @@
     cursor: pointer;
 
     @media (max-width: $max-xs-width) {
-      width: 280px;
-      height: 280px;
+      width: 260px;
+      height: 260px;
       box-sizing: border-box;
     }
 
@@ -67,8 +68,8 @@
       transition: $transition;
 
       @media (max-width: $max-xs-width) {
-        width: 240px;
-        height: 240px;
+        width: 220px;
+        height: 220px;
       }
     }
 

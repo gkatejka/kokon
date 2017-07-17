@@ -5,6 +5,15 @@
   align-items: baseline;
   height: 50px;
 
+  @media (max-width: $max-xs-width) {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    height: 120px;
+    padding-bottom: 50px;
+    text-align: center;
+  }
+
   &--main {
     position: absolute;
     left: 50%;
@@ -20,6 +29,11 @@
     outline: none;
     transform: translateX(-50%);
     cursor: pointer;
+
+    @media (max-width: $max-xs-width) {
+      top: auto;
+      bottom: 20px;
+    }
   }
 
   &__logo {
@@ -37,5 +51,10 @@
     text-transform: lowercase;
     text-decoration: none;
     letter-spacing: .35em;
+
+    @media (max-width: $max-xs-width) {
+      width: 100%;
+      padding: 5px 0;
+    }
   }
 }
