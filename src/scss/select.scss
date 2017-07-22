@@ -1,0 +1,65 @@
+.select {
+  display: block;
+  width: 100%;
+
+  .selectize-input {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px 8px;
+    font-size: 16px;
+    font-weight: normal;
+    color: $dark;
+    border: none;
+    border-bottom: 1px solid $silver;
+    border-right: none;
+    box-shadow: none;
+  }
+
+  &.selectize-control.single .selectize-input,
+  &.selectize-control.single .selectize-input input {
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    font-weight: normal;
+    color: $dark;
+
+    &::-webkit-input-placeholder {
+      color: $dark;
+    }
+
+    &::after {
+      width: 18px;
+      height: 18px;
+      background: transparent url('../img/arrow.svg') 0 0 no-repeat;
+      background-size: cover;
+      border: none;
+    }
+
+    &.input-active {
+      &::after {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  .selectize-dropdown {
+    padding: 10px 0;
+    box-shadow: 0 6px 13px 1px rgba(4, 26, 55, .19);
+    border-radius: 0 4px 4px 0;
+
+    [data-selectable] {
+      padding: 8px 40px;
+      font-size: 16px;
+      font-weight: normal;
+      color: $dark;
+
+      &:hover,
+      &.active,
+      &.selected {
+        color: $blue;
+        background-color: transparent;
+      }
+    }
+  }
+}

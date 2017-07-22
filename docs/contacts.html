@@ -117,7 +117,10 @@
       </p>
     </section>
 
-    <section class="container map" style="background-image: url('img/map.jpg');">
+    <section class="container map">
+      <div class="map__wrap">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A69255e4b2f6c249a70e3a28d93ec741d76d707a8fb0ede24780e3b9b384fd992&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=false"></script>
+      </div>
       <div class="map__info">
         <span class="map__info-text">Домофон 77</span>
       </div>
@@ -126,7 +129,7 @@
     <section class="welcome">
       <div class="welcome__wrap container">
         <h2 class="welcome__title">Добро пожаловать</h2>
-        <button type="button" class="welcome__btn btn">Арендовать</button>
+        <button type="button" class="welcome__btn btn js-btn-modal-open">Арендовать</button>
       </div>
     </section>
 
@@ -137,6 +140,48 @@
       <img src="img/nordart-logo.svg" alt="Nord Art logo" width="115" class="footer__logo">
     </a>
   </footer>
+
+  <div class="modal">
+    <p class="modal__title">Арендовать kokonspace</p>
+    <form action="" class="modal__form">
+      <div class="modal__form-row">
+        <input type="text" placeholder="Ваше имя" class="modal__form-input" required>
+      </div>
+      <div class="modal__form-row">
+        <input type="text" placeholder="Телефон или Email" class="modal__form-input" required>
+      </div>
+      <div class="modal__form-row">
+        <select name="" id="" class="modal__form-select select" required>
+          <option value="">Тип мероприятия</option>
+          <option value="learn">Обучение</option>
+          <option value="coorparate">Корпоратив</option>
+          <option value="wedding">Свадьба</option>
+          <option value="birthday">День рождения</option>
+          <option value="kidsparty">Детский праздник</option>
+        </select>
+      </div>
+      <div class="modal__form-row modal__form-row--date">
+        <input type="text" placeholder="Дата проведения" class="modal__form-date js-form-date" required>
+      </div>
+      <p class="modal__form-error">
+        При отправке формы произошла ошибка. <br>
+        Пожалуйста, попробуйте снова или позвоните нам по телефону (812) 309-14-79
+      </p>
+      <div class="modal__form-row modal__form-row--center">
+        <button type="submit" class="modal__form-submit btn">Готово</button>
+      </div>
+    </form>
+    <div class="modal__form-success">
+      <p class="modal__success-msg">
+      Спасибо за Ваше обращение. <br>
+      В ближайшее время с Вами свяжется наш менеджер для подтверждения аренды и уточнения деталей
+      </p>
+      <div class="modal__msg-close">
+        <button type="button" class="modal__close-btn btn js-btn-modal-close">Закрыть</button>
+      </div>
+    </div>
+  </div>
+
   <script src="js/script.min.js"></script>
 </body>
 </html>

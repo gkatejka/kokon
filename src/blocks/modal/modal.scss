@@ -1,0 +1,123 @@
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 700px;
+  box-sizing: border-box;
+  padding: 50px;
+  background: $white;
+  transform: translate(-50%, -50%);
+  z-index: 9999999;
+
+  &.modal-open {
+    display: block;
+  }
+
+  &__title {
+    padding: 0;
+    margin: 0 0 50px;
+    font-size: 24px;
+    font-weight: 900;
+    letter-spacing: .5em;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__form {
+    font-size: 16px;
+    font-weight: normal;
+  }
+
+  &__form-row {
+    margin-bottom: 20px;
+
+    &--center {
+      text-align: center;
+    }
+
+    &--date {
+      position: relative;
+
+      &::after {
+        position: absolute;
+        top: 12px;
+        right: 8px;
+        content: '';
+        width: 18px;
+        height: 20px;
+        background: transparent url('../img/calendar.png') 0 0 no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+
+  &__form-input {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px 8px;
+    border: none;
+    border-bottom: 1px solid $silver;
+    outline: none;
+
+    &::-webkit-input-placeholder {
+      color: $dark;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus::-webkit-input-placeholder {
+      color: transparent;
+    }
+  }
+
+  &__form-date {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px 8px;
+    border: none;
+    border-bottom: 1px solid $silver;
+
+    &:focus {
+      outline: none;
+    }
+
+    &::-webkit-input-placeholder {
+      color: $dark;
+    }
+
+    &::-webkit-inner-spin-button,
+    &::-webkit-clear-button,
+    &:focus::-webkit-calendar-picker-indicator {
+      display: none;
+    }
+  }
+
+  &__form-error {
+    display: none;
+    padding: 0;
+    margin: 15px 0;
+    font-size: 14px;
+    color: $red;
+    text-align: center;
+  }
+
+  &__form-submit {
+    margin-top: 30px;
+  }
+
+  &__form-success {
+    display: none;
+  }
+
+  &__success-msg {}
+
+  &__msg-close {}
+
+  &__close-btn {}
+
+}

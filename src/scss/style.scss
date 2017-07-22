@@ -5,7 +5,11 @@
 @import 'slick';
 @import 'slick-theme';
 @import 'magnific-popup';
+@import 'selectize';
+@import 'jquery-ui';
+@import 'jquery-ui.theme';
 @import 'btn';
+@import 'select';
 
 // Blocks
 @import '../blocks/sprite-svg--localstorage/sprite-svg--localstorage';
@@ -29,3 +33,4 @@
 @import '../blocks/main-promo/main-promo';
 @import '../blocks/rooms/rooms';
 @import '../blocks/social-list/social-list';
+@import '../blocks/modal/modal';
