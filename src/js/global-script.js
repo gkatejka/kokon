@@ -1,12 +1,18 @@
 $(document).ready(function() {
 
+  var $body = $('body');
   var $toggleMenu = $('.js-toggle-btn');
   var $navMune = $('.menu-nav');
+
   var $modal = $('.modal');
-  var $body = $('body');
   var $btnModalOpen = $('.js-btn-modal-open');
-  var $btnModalClose =$('.js-btn-modal-close')
+  var $btnModalClose = $('.js-btn-modal-close');
   var $dateInput = $('.js-form-date');
+
+  var $btnRoomClose = $('.js-btn-room-close');
+  var $btnRoomOpenSlider = $('.js-open-room-slider');
+  var $roomSliderContainer = $('.js-room-slider-container');
+  var $roomSlider = $('.js-room-slider');
 
   // ----
   // Меню
@@ -28,6 +34,12 @@ $(document).ready(function() {
     variableWidth: true
   });
 
+  $roomSlider.slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: false
+  });
+
   $('.about__slider').magnificPopup({
     delegate: 'a',
     type: 'image',
@@ -39,7 +51,6 @@ $(document).ready(function() {
       preload: [0,1],
     }
   });
-
 
   // ------
   // Селект
@@ -82,7 +93,7 @@ $(document).ready(function() {
     $body.removeClass('overlay');
   }
 
-  $btnModalOpen.click( function(e) {
+  $btnModalOpen.click(function(e) {
     e.preventDefault();
     $modal.addClass('modal-open');
     $body.addClass('overlay');
@@ -95,5 +106,22 @@ $(document).ready(function() {
   });
 
   $btnModalClose.click(closeModal);
+
+
+  // --------------
+  // Залы
+  // --------------
+  $btnRoomClose.click(function(e) {
+    e.preventDefault();
+    $('.room-slider-open').removeClass('room-slider-open');
+  });
+
+  $btnRoomOpenSlider.click(function() {
+    var type = $(this).attr('data-type');
+    $(".room-slider[data-room='" + type + "']").addClass('room-slider-open').find('.js-room-slider').slick('refresh');
+    console.log(type);
+    // $slider.find('.js-room-slider').slick('refresh');
+    
+  });
 
 });
