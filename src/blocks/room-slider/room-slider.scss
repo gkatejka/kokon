@@ -28,6 +28,10 @@
     cursor: pointer;
     transition: $transition;
 
+    @media (max-width: $max-xs-width) {
+      top: 25px;
+    }
+
     &:hover,
     &:active {
       opacity: .75;
@@ -45,6 +49,10 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    @media (max-width: $max-xs-width) {
+      padding-bottom: 40px;
+    }
   }
 
   .slick-initialized .slick-slide {
@@ -62,6 +70,11 @@
     margin: 0;
     background: transparent url('../img/wineglass.png') 0 0 no-repeat;
     background-size: 13px 27px;
+
+    @media (max-width: $max-xs-width) {
+      width: 100%;
+      padding-bottom: 40%;
+    }
   }
 
   &__slide-bottom {
@@ -75,10 +88,25 @@
   &__dateils,
   &__btn-wrap {
     width: calc(100% / 3);
+
+    @media (max-width: $max-xs-width) {
+      width: 100%;
+      text-align: center;
+    }
   }
 
   &__btn-wrap {
     text-align: center;
+
+    @media (max-width: $max-xs-width) {
+      margin-top: 4%;
+    }
+  }
+
+  &__btn {
+    @media (max-width: $max-xs-width) {
+      width: 100%;
+    }
   }
 
   .slick-arrow {

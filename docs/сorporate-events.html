@@ -274,6 +274,46 @@
     </a>
     <a href="contacts.html" class="footer__link">Контакты</a>
   </footer>
+  <div class="modal">
+    <p class="modal__title">Арендовать kokonspace</p>
+    <form action="" class="modal__form">
+      <div class="modal__form-row">
+        <input type="text" placeholder="Ваше имя" class="modal__form-input" required>
+      </div>
+      <div class="modal__form-row">
+        <input type="text" placeholder="Телефон или Email" class="modal__form-input" required>
+      </div>
+      <div class="modal__form-row">
+        <select name="" id="" class="modal__form-select select" required>
+          <option value="">Тип мероприятия</option>
+          <option value="learn">Обучение</option>
+          <option value="coorparate">Корпоратив</option>
+          <option value="wedding">Свадьба</option>
+          <option value="birthday">День рождения</option>
+          <option value="kidsparty">Детский праздник</option>
+        </select>
+      </div>
+      <div class="modal__form-row modal__form-row--date">
+        <input type="text" placeholder="Дата проведения" class="modal__form-date js-form-date" required>
+      </div>
+      <p class="modal__form-error">
+        При отправке формы произошла ошибка. <br>
+        Пожалуйста, попробуйте снова или позвоните нам по телефону (812) 309-14-79
+      </p>
+      <div class="modal__form-row modal__form-row--center">
+        <button type="submit" class="modal__form-submit btn">Готово</button>
+      </div>
+    </form>
+    <div class="modal__form-success">
+      <p class="modal__success-msg">
+      Спасибо за Ваше обращение. <br>
+      В ближайшее время с Вами свяжется наш менеджер для подтверждения аренды и уточнения деталей
+      </p>
+      <div class="modal__msg-close">
+        <button type="button" class="modal__close-btn btn js-btn-modal-close">Закрыть</button>
+      </div>
+    </div>
+  </div>
   
   <script src="js/script.min.js"></script>
 </body>

@@ -15,6 +15,10 @@
     border-right: none;
     border-radius: 0;
     box-shadow: none;
+
+    @media (max-width: $max-xs-width) {
+      font-size: 12px;
+    }
   }
 
   &.selectize-control.single .selectize-input,
@@ -24,6 +28,10 @@
     font-size: 16px;
     font-weight: normal;
     color: $dark;
+
+    @media (max-width: $max-xs-width) {
+      font-size: 12px;
+    }
 
     &::-webkit-input-placeholder {
       color: $dark;
@@ -35,6 +43,11 @@
       background: transparent url('../img/arrow.svg') 0 0 no-repeat;
       background-size: cover;
       border: none;
+
+      @media (max-width: $max-xs-width) {
+        width: 14px;
+        height: 14px;
+      }
     }
 
     &.input-active {
@@ -54,6 +67,10 @@
       font-size: 16px;
       font-weight: normal;
       color: $dark;
+
+      @media (max-width: $max-xs-width) {
+        font-size: 12px;
+      }
 
       &:hover,
       &.active,

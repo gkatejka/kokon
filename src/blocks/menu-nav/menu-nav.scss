@@ -31,7 +31,7 @@
     &::before {
       position: absolute;
       top: -185px;
-      right: -255px;
+      right: -180px;
       z-index: -1;
       content: '';
       width: 400px;
@@ -68,7 +68,7 @@
 
     .menu-nav--open & {
       top: -30px;
-      right: -245px;
+      right: -175px;
 
       @media (max-width: $max-xs-width) {
         top: -10px;
@@ -98,6 +98,10 @@
         content: '';
         height: 3px;
         background: $white;
+
+        .menu-nav--open & {
+          left: 3px;
+        }
       }
 
       &::before {
@@ -127,7 +131,7 @@
   &__list {
     position: relative;
     top: -60px;
-    left: 80px;
+    left: 0;
     padding: 0;
     margin: 0;
     list-style: none;

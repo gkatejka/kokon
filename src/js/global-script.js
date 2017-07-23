@@ -114,14 +114,13 @@ $(document).ready(function() {
   $btnRoomClose.click(function(e) {
     e.preventDefault();
     $('.room-slider-open').removeClass('room-slider-open');
+    $body.removeClass('room-show');
   });
 
   $btnRoomOpenSlider.click(function() {
     var type = $(this).attr('data-type');
     $(".room-slider[data-room='" + type + "']").addClass('room-slider-open').find('.js-room-slider').slick('refresh');
-    console.log(type);
-    // $slider.find('.js-room-slider').slick('refresh');
-    
+    $body.addClass('room-show');
   });
 
 });

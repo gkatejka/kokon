@@ -10,6 +10,12 @@
   transform: translate(-50%, -50%);
   z-index: 9999999;
 
+  @media (max-width: $max-xs-width) {
+    width: 90%;
+    max-width: 500px;
+    padding: 15px;
+  }
+
   &.modal-open {
     display: block;
   }
@@ -22,15 +28,28 @@
     letter-spacing: .5em;
     text-transform: uppercase;
     text-align: center;
+
+    @media (max-width: $max-xs-width) {
+      margin-bottom: 30px;
+      font-size: 20px;
+    }
   }
 
   &__form {
     font-size: 16px;
     font-weight: normal;
+
+    @media (max-width: $max-xs-width) {
+      font-size: 12px;
+    }
   }
 
   &__form-row {
     margin-bottom: 20px;
+
+    @media (max-width: $max-xs-width) {
+      margin-bottom: 15px;
+    }
 
     &--center {
       text-align: center;
@@ -48,6 +67,12 @@
         height: 20px;
         background: transparent url('../img/calendar.png') 0 0 no-repeat;
         background-size: cover;
+
+        @media (max-width: $max-xs-width) {
+          width: 15px;
+          height: 16px;
+          right: 13px;
+        }
       }
     }
   }
@@ -108,6 +133,12 @@
 
   &__form-submit {
     margin-top: 30px;
+
+    @media (max-width: $max-xs-width) {
+      padding: 14px 30px;
+      margin-top: 20px;
+      font-size: 16px;
+    }
   }
 
   &__form-success {
