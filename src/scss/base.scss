@@ -15,6 +15,7 @@ p {
 }
 
 a {
+  transition: $transition;
   cursor: pointer;
 }
 
@@ -68,4 +69,12 @@ h2,
 
 .room-show {
   overflow: hidden;
+}
+
+input,
+select,
+textarea {
+  font-family: $circe;
+  font-size: 16px;
+  font-weight: normal;
 }

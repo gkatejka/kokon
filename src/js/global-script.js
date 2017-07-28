@@ -55,9 +55,7 @@ $(document).ready(function() {
   // ------
   // Селект
   // ------
-  $('.select').selectize({
-    allowEmptyOption: true,
-  });
+  $('.select').selectric();
 
 
   // ---------

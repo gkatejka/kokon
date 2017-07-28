@@ -68,11 +68,17 @@
 
     @@include('blocks/why/why.html')
 
-    @@include('blocks/welcome/welcome.html')
+    <section class="welcome welcome--rent">
+      <div class="welcome__wrap container">
+        <h2 class="welcome__title">Добро пожаловать</h2>
+        <button type="button" class="welcome__btn btn js-btn-modal-open">Арендовать</button>
+      </div>
+    </section>
 
   </main>
 
   @@include('blocks/footer/footer.html')
+  
   @@include('blocks/modal/modal.html')
   <script src="js/script.min.js"></script>
 </body>

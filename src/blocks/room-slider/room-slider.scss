@@ -39,37 +39,71 @@
   }
 
   &__slide {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-end;
+    display: block;
     width: 100%;
     height: 100vh;
-    box-sizing: border-box;
-    padding-bottom: 70px;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-
-    @media (max-width: $max-xs-width) {
-      padding-bottom: 40px;
-    }
-  }
-
-  .slick-initialized .slick-slide {
-    display: flex;
   }
 
   &__slide-wrap {
+    position: relative;
+    z-index: 99999;
+  }
+
+  &__descr-wrap {
+    position: absolute;
+    left: 0;
+    bottom: 5%;
+    z-index: 999999;
     font-size: 16px;
     color: $white;
+
+    @media (max-width: $max-xs-width) {
+      bottom: 40px;
+    }
   }
 
   &__descr {
     width: 30%;
     padding: 50px 0 40px;
     margin: 0;
-    background: transparent url('../img/wineglass.png') 0 0 no-repeat;
-    background-size: 13px 27px;
+
+    &--wineglass {
+      background: transparent url('../img/icons/wineglass.svg') 0 0 no-repeat;
+      background-size: 24px 24px;
+    }
+
+    &--birthday {
+      background: transparent url('../img/icons/birthday.svg') 0 0 no-repeat;
+      background-size: 24px 24px;
+    }
+
+    &--wedding {
+      background: transparent url('../img/icons/wedding.svg') 0 0 no-repeat;
+      background-size: 24px 24px;
+    }
+
+    &--corporate {
+      background: transparent url('../img/icons/corporate.svg') 0 0 no-repeat;
+      background-size: 24px 24px;
+    }
+
+    &--kids {
+      background: transparent url('../img/icons/kids.svg') 0 0 no-repeat;
+      background-size: 24px 24px;
+    }
+
+    &--learn {
+      background: transparent url('../img/icons/learn.svg') 0 0 no-repeat;
+      background-size: 24px 24px;
+    }
+
+    &--presentations {
+      background: transparent url('../img/icons/presentations.svg') 0 0 no-repeat;
+      background-size: 24px 24px;
+    }
 
     @media (max-width: $max-xs-width) {
       width: 100%;
@@ -130,10 +164,11 @@
 
   .slick-prev {
     left: 3%;
+    transform: rotate(180deg);
   }
 
   .slick-next {
     right: 3%;
-    transform: rotate(180deg);
+    
   }
 }

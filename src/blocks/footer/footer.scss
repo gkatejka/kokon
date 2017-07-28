@@ -2,8 +2,8 @@
   position: relative;
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
-  height: 50px;
+  align-items: center;
+  height: 70px;
 
   @media (max-width: $max-xs-width) {
     flex-wrap: wrap;
@@ -24,16 +24,30 @@
 
   &__logo-link {
     position: absolute;
-    top: 0;
+    top: -7px;
     left: 50%;
     outline: none;
     transform: translateX(-50%);
     cursor: pointer;
+    text-decoration: none;
+
+    &:hover {
+      opacity: .5;
+    }
 
     @media (max-width: $max-xs-width) {
       top: auto;
       bottom: 20px;
     }
+  }
+
+  &__logo-text {
+    display: block;
+    padding-bottom: 12px;
+    text-align: center;
+    font-size: 14px;
+    color: $dark;
+    text-decoration: none;
   }
 
   &__logo {
@@ -51,6 +65,10 @@
     text-transform: lowercase;
     text-decoration: none;
     letter-spacing: .35em;
+
+    &:hover {
+      opacity: .5;
+    }
 
     @media (max-width: $max-xs-width) {
       width: 100%;

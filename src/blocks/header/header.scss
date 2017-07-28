@@ -32,7 +32,6 @@
 
   &__phone {
     margin-left: 105px;
-    font-family: $raleway;
     font-size: 18px;
     font-weight: bold;
     color: $white;
@@ -40,6 +39,10 @@
 
     @media (max-width: $max-xs-width) {
       display: none;
+    }
+
+    &:hover {
+      opacity: .5;
     }
 
     .header--main & {
