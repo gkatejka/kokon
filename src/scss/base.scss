@@ -7,6 +7,10 @@ body {
   color: $dark;
   background: $white;
   overflow-x: hidden;
+
+  @media (min-width: $min-xs-width) and (max-width: $max-sm-width) {
+    overflow-x: hidden;
+  }
 }
 
 p {

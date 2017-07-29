@@ -10,6 +10,10 @@
   letter-spacing: .45em;
   box-shadow: 0 11px 15px -3px rgba(0, 0, 0, .35);
 
+  @media (min-width: $min-xs-width) and (max-width: $max-sm-width) {
+    
+  }
+
   @media (max-width: $max-xs-width) {
     flex-wrap: wrap;
     letter-spacing: .4em;
@@ -19,6 +23,10 @@
     width: calc(100% / 3);
     padding: 50px 0;
     text-align: center;
+
+    @media (min-width: $min-xs-width) and (max-width: $max-sm-width) {
+      padding: 50px 5%;
+    }
 
     @media (max-width: $max-xs-width) {
       width: 100%;
@@ -40,7 +48,7 @@
   &__price {
     font-size: 24px;
 
-    @media (max-width: $max-xs-width) {
+    @media (max-width: $max-sm-width) {
       font-size: 20px;
     }
   }
@@ -48,7 +56,7 @@
   &__hours {
     font-size: 14px;
 
-    @media (max-width: $max-xs-width) {
+    @media (max-width: $max-sm-width) {
       font-size: 12px;
     }
   }

@@ -3,6 +3,11 @@
   background: transparent url('../img/rooms-bg.jpg') center center no-repeat;
   background-size: cover;
 
+  @media (min-width: $min-xs-width) and (max-width: $max-sm-width) {
+    height: 500px;
+    padding-top: 5%;
+  }
+
   @media (max-width: $max-xs-width) {
     padding-top: 30px;
   }
@@ -14,6 +19,10 @@
     color: #f7f7f7;
     letter-spacing: .35em;
     text-align: center;
+
+    @media (min-width: $min-xs-width) and (max-width: $max-sm-width) {
+      font-size: 70px;
+    }
 
     @media (max-width: $max-xs-width) {
       font-size: 30px;
@@ -81,6 +90,11 @@
         width: 600px;
         height: 600px;
 
+        @media (min-width: $min-xs-width) and (max-width: $max-sm-width) {
+          width: 270px;
+          height: 270px;
+        }
+
         @media (max-width: $max-xs-width) {
           width: 250px;
           height: 250px;
@@ -104,6 +118,11 @@
     .rooms__item:hover & {
       width: 400px;
       height: 400px;
+
+      @media (min-width: $min-xs-width) and (max-width: $max-sm-width) {
+        width: 230px;
+        height: 230px;
+      }
 
       @media (max-width: $max-xs-width) {
         width: 200px;

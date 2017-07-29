@@ -16,7 +16,7 @@
     top: 60px;
     right: 5%;
     content: '';
-    z-index: 99999;
+    z-index: 999999999;
     width: 20px;
     height: 20px;
     padding: 0;
@@ -67,48 +67,17 @@
 
   &__descr {
     width: 30%;
-    padding: 50px 0 40px;
+    padding: 20px 0 40px;
     margin: 0;
-
-    &--wineglass {
-      background: transparent url('../img/icons/wineglass.svg') 0 0 no-repeat;
-      background-size: 24px 24px;
-    }
-
-    &--birthday {
-      background: transparent url('../img/icons/birthday.svg') 0 0 no-repeat;
-      background-size: 24px 24px;
-    }
-
-    &--wedding {
-      background: transparent url('../img/icons/wedding.svg') 0 0 no-repeat;
-      background-size: 24px 24px;
-    }
-
-    &--corporate {
-      background: transparent url('../img/icons/corporate.svg') 0 0 no-repeat;
-      background-size: 24px 24px;
-    }
-
-    &--kids {
-      background: transparent url('../img/icons/kids.svg') 0 0 no-repeat;
-      background-size: 24px 24px;
-    }
-
-    &--learn {
-      background: transparent url('../img/icons/learn.svg') 0 0 no-repeat;
-      background-size: 24px 24px;
-    }
-
-    &--presentations {
-      background: transparent url('../img/icons/presentations.svg') 0 0 no-repeat;
-      background-size: 24px 24px;
-    }
 
     @media (max-width: $max-xs-width) {
       width: 100%;
       padding-bottom: 40%;
     }
+  }
+
+  &__icon {
+    margin-right: 7px;
   }
 
   &__slide-bottom {
@@ -144,7 +113,7 @@
   }
 
   .slick-arrow {
-    z-index: 99999;
+    z-index: 999999999;
     width: 20px;
     height: 20px;
     background: transparent url('../img/arrow-slide.svg') 0 0 no-repeat;

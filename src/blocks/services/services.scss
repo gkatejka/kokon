@@ -42,21 +42,32 @@
   }
 
   &__item {
-    width: 33%;
+    width: 35%;
     box-sizing: border-box;
     padding-right: 8%;
     margin-bottom: 45px;
-    font-family: $raleway;
-    font-weight: 900;
-    line-height: 1.4;
-    color: $dark;
+
+    &:nth-child(3) {
+      width: 25%;
+      padding-right: 0;
+    }
 
     @media (max-width: $max-xs-width) {
       width: 100%;
       padding-right: 25%;
       margin-bottom: 20px;
+    }
+  }
+
+  &__item-title {
+    font-family: $raleway;
+    font-weight: 900;
+    color: $dark;
+    line-height: 1.4;
+    letter-spacing: .2em;
+
+    @media (max-width: $max-xs-width) {
       font-size: 14px;
-      letter-spacing: .2em;
     }
   }
 

@@ -4,6 +4,10 @@
   right: 25px;
   z-index: 12;
 
+  @media (min-width: $min-xs-width) and (max-width: $max-sm-width) {
+    right: 50px;
+  }
+
   @media (max-width: $max-xs-width) {
     position: fixed;
     top: 25px;
@@ -42,6 +46,16 @@
       border-radius: 50%;
       opacity: 0;
       transition: $transition;
+
+      @media (min-width: $min-xs-width) and (max-width: $max-md-width) {
+        top: -35px;
+        right: -50px;
+        width: 269px;
+        height: 247px;
+        background: transparent url('../img/menu-bg.png') top right no-repeat;
+        background-size: cover;
+        border-radius: 0;
+      }
 
       @media (max-width: $max-xs-width) {
         display: none;

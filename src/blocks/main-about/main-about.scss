@@ -11,7 +11,7 @@
     justify-content: center;
     align-items: center;
 
-    @media (max-width: $max-xs-width) {
+    @media (max-width: $max-sm-width) {
       flex-wrap: wrap;
     }
   }
@@ -20,7 +20,7 @@
     width: 35%;
     padding-left: 3%;
 
-    @media (max-width: $max-xs-width) {
+    @media (max-width: $max-sm-width) {
       width: 100%;
       padding-left: 0;
     }
@@ -29,7 +29,7 @@
   &__right {
     width: 45%;
 
-    @media (max-width: $max-xs-width) {
+    @media (max-width: $max-sm-width) {
       width: 100%;
     }
   }
@@ -47,10 +47,15 @@
     box-shadow: 0 10px 65px 0 rgba(0, 0, 0, .33);
     cursor: pointer;
 
+    @media (min-width: $min-xs-width) and (max-width: $max-sm-width) {
+      margin: 0 auto 35px;
+    }
+
     @media (max-width: $max-xs-width) {
       width: 260px;
       height: 260px;
       box-sizing: border-box;
+      margin: 0 auto;
     }
 
     &::after {

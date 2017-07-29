@@ -22,6 +22,13 @@
     background-size: cover;
     border-radius: 50%;
 
+    @media (min-width: $min-xs-width) and (max-width: $max-sm-width) {
+      width: 250px;
+      height: 250px;
+      right: 25px;
+      bottom: -100px;
+    }
+
     @media (max-width: $max-xs-width) {
       width: 150px;
       height: 150px;
@@ -35,6 +42,11 @@
     color: $white;
     letter-spacing: .45em;
     text-transform: uppercase;
+
+    @media (min-width: $min-xs-width) and (max-width: $max-sm-width) {
+      font-size: 18px;
+      letter-spacing: .2em;
+    }
 
     @media (max-width: $max-xs-width) {
       font-size: 14px;

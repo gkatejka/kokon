@@ -6,6 +6,10 @@
     padding-top: 15%;
   }
 
+  @media (min-width: $min-xs-width) and (max-width: $max-sm-width) {
+    padding-top: 15%;
+  }
+
   @media (max-width: $max-xs-width) {
     padding-top: 100px;
   }

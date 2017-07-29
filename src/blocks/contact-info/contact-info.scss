@@ -46,6 +46,10 @@
 
     &--email {
       margin-bottom: 100px;
+
+      @media (min-width: $min-xs-width) and (max-width: $max-sm-width) {
+        margin-bottom: 55px;
+      }
     }
 
     b {

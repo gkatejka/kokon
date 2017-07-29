@@ -2,6 +2,11 @@
   max-width: 780px;
   padding: 10px 0 100px;
 
+  @media (min-width: $min-xs-width) and (max-width: $max-sm-width) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
   &__title {
     padding-left: 5.5%;
   }

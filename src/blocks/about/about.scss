@@ -1,6 +1,11 @@
 .about {
   padding: 100px 0 50px;
 
+  @media (min-width: $min-xs-width) and (max-width: $max-sm-width) {
+    overflow-x: hidden;
+    padding-top: 40px;
+  }
+
   @media (max-width: $max-xs-width) {
     padding-top: 50px;
     padding-bottom: 25px;
